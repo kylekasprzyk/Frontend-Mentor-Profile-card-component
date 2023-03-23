@@ -22,7 +22,7 @@ body {
     justify-content: center;
     background: hsl(185, 75%, 39%);
     background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
-    background-position: right 45vw bottom 45vh, left 45vw top 45vh;
+    background-position: right 40vw bottom 60vh, left 25vw top 50vh;
     background-repeat: no-repeat, no-repeat;
 }
 
