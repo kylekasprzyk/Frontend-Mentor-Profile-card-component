@@ -173,6 +173,17 @@ p {
     padding-top: 5px;
 }
 
+.followers{
+    width: 57px;
+}
+
+.likes{
+    width: 57px;
+}
+
+.photos{
+    width: 57px;
+}
 
 .hidden {
     display: none;
