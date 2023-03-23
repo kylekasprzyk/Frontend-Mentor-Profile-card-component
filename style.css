@@ -21,6 +21,9 @@ body {
     align-items: center;
     justify-content: center;
     background: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: right 45vw bottom 45vh, left 45vw top 45vh;
+    background-repeat: no-repeat, no-repeat;
 }
 
 main {
@@ -62,7 +65,7 @@ h6 {
     isolation: isolate;
 }
 
-.top-img {
+/* .top-img {
     position: fixed;
     width: 978px;
     height: 976px;
@@ -84,7 +87,7 @@ h6 {
     z-index: -2;
     top: 412px;
     left: 700px;
-}
+} */
 
 .card {
     display: flex;
