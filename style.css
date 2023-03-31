@@ -65,29 +65,18 @@ h6 {
     isolation: isolate;
 }
 
-/* .top-img {
-    position: fixed;
-    width: 978px;
-    height: 976px;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-    transform: rotate(35deg);
-    z-index: -1;
-    top: -446px;
-    left: -287px;
-}
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
 
-.bottom-img {
-    position: fixed;
-    width: 978px;
-    height: 976px;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-    transform: rotate(15deg);
-    z-index: -2;
-    top: 412px;
-    left: 700px;
-} */
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
 
 .card {
     display: flex;
@@ -186,15 +175,41 @@ p {
     padding-right: 7px;
 }
 
-.hidden {
-    display: none;
+footer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
 }
 
-.attribution {
-    font-size: 11px;
+
+footer p {
+    font-size: 0.6875rem;
     text-align: center;
+    color: hsl(var(--clr-cyan));
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+
+footer a {
+    color: hsl(var(--clr-cyan))
+}
+
+
+.typing-text {
+    width: 47ch;
+    animation: typing 3500ms steps(47), blink 500ms step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
 }
