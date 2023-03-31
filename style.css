@@ -105,10 +105,10 @@ h6 {
 }
 
 .profile-pic {
-    position: relative;
+    position: fixed;
     border-radius: 50%;
     border: 5px solid #FFFFFF;
-    margin-top: 65px;
+    margin-top: 188px;
 }
 
 h1 {
